@@ -2,39 +2,30 @@
 buildscript {
     repositories {
         google()
-//		maven {
-//			url "https://maven.google.com"
-//		}
 		jcenter()
+		mavenCentral()
     }
     dependencies {
-
+		classpath 'com.github.dcendents:android-maven-gradle-plugin:2.1' // Add this line
 		classpath 'com.android.tools.build:gradle:7.0.0-alpha03'
         classpath "org.jetbrains.kotlin:kotlin-gradle-plugin:1.4.21"
 //		classpath 'com.github.dcendents:android-maven-plugin:1.2'
-//		classpath 'com.github.dcendents:android-maven-gradle-plugin:2.1'
 //		classpath 'com.jfrog.bintray.gradle:gradle-bintray-plugin:1.7.3'
         // NOTE: Do not place your application dependencies here; they belong
         // in the individual module build.gradle files
     }
 }
 
-plugins {
-	id "com.jfrog.bintray" version "1.7.3"
-	id "com.github.dcendents.android-maven" version "2.0"
-}
-
 
 allprojects {
     repositories {
+		mavenCentral()
         google()
-//		maven {
-//			url "https://maven.google.com"
-//		}
         jcenter()
+		maven { url "https://jitpack.io" }
     }
 }
 
-//task clean(type: Delete) {
-//    delete rootProject.buildDir
-//}
+task clean(type: Delete) {
+    delete rootProject.buildDir
+}
