@@ -7,6 +7,7 @@ import android.view.View
 import android.view.ViewGroup
 import androidx.navigation.fragment.findNavController
 import com.appscrip.firstlibraryapp.databinding.FragmentFirstBinding
+import com.appscrip.myfirstlibrary.ToasterMessage
 
 /**
  * A simple [Fragment] subclass as the default destination in the navigation.
@@ -25,6 +26,7 @@ class FirstFragment : Fragment() {
 	): View? {
 
 		_binding = FragmentFirstBinding.inflate(inflater, container, false)
+//		ToasterMessage.s()
 		return binding.root
 
 	}
