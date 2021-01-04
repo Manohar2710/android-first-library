@@ -47,7 +47,7 @@ dependencies {
     androidTestImplementation 'androidx.test.ext:junit:1.1.2'
     androidTestImplementation 'androidx.test.espresso:espresso-core:3.3.0'
 	//my first library
-	implementation 'com.github.Manohar2710:android-first-library:0.0.16'
+	implementation 'com.github.Manohar2710:android-first-library:0.0.17'
 }
 //apply plugin: 'com.github.dcendents.android-maven'
 //group='com.github.Manohar2710'

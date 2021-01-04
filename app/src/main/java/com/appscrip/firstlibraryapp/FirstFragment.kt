@@ -26,7 +26,8 @@ class FirstFragment : Fragment() {
 	): View? {
 
 		_binding = FragmentFirstBinding.inflate(inflater, container, false)
-//		ToasterMessage.s()
+//		ToasterMessage.s(null,"")
+
 		return binding.root
 
 	}
